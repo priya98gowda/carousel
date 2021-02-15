@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, red, blue);
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+  color: white;
+  text-shadow: 3px 4px 5px greenyellow;
+}
+
+#slider {
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+#slider figure {
+  position: relative;
+  width: 600%;
+  display: flex;
+  animation: slider 20s infinite;
+}
+
+#slider figure img {
+  width: 50%;
+  height: 60vh;
+  background-size: 100% 100%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+
+  20% {
+    left: -100%;
+  }
+
+  40% {
+    left: -200%;
+  }
+
+  60% {
+    left: -300%;
+  }
+
+  80% {
+    left: -400%;
+  }
+
+  100% {
+    left: -500%;
+  }
+}
